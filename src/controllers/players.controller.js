@@ -19,10 +19,11 @@ const createGame = catchAsync(async (req, res) => {
 
   const newUser = {
     succes_rate: game.succes_rate,
-    games: [...user.games, game.game],
     won: game.won,
     lost: game.lost,
   };
+
+  await userService.createGame(user.id, game.game);
 
   await userService.updateGames(req.params.id, newUser);
 

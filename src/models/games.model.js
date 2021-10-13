@@ -13,14 +13,12 @@ const Games = connection.define(
     },
     userId: {
       type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
       allowNull: false,
     },
     result: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.TEXT,
       allowNull: false,
-      required: true,
-      unique: true,
+      unique: false,
     },
     sumDice: {
       type: DataTypes.INTEGER,

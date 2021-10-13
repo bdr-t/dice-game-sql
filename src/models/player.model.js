@@ -26,7 +26,7 @@ const Player = connection.define(
       defaultValue: 0,
     },
     succes_rate: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL,
       defaultValue: 0,
     },
   },
