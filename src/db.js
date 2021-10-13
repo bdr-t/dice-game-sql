@@ -23,11 +23,9 @@ mysql
 (async () => {
   try {
     await mysql.sync({ alter: { drop: false } });
-    logger.info('Schema sync: [OK]');
+    logger.info('Schema sync ok');
   } catch (e) {
-    logger.info(
-      "Schema sync: [FAIL]\n- Tables couldn't be altered. Proceeding to drop and create tables to match the schema."
-    );
+    logger.info(e);
     mysql.sync({ force: true });
   }
 })();
