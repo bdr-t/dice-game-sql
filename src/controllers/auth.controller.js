@@ -30,11 +30,13 @@ const loginAdmin = catchAsync(async (req, res) => {
     where: { name: 'admin' },
   });
   await authService.loginUserWithNameAndPasswordAdmin(name, password);
+  const tokens = await tokenService.generateAuthTokens(user);
   res.send({
     user: {
       id: user.id,
       name: user.name,
     },
+    tokens,
   });
 });
 
