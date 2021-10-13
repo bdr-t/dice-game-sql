@@ -3,11 +3,17 @@ const express = require('express');
 const validate = require('../middlewares/validate');
 const authValidation = require('../validations/auth.validation');
 const authController = require('../controllers/auth.controller');
+// const { Prueba } = require('../models');
 
 const router = express.Router();
 
 router.post('/register', validate(authValidation.register), authController.register);
 router.post('/login', validate(authValidation.login), authController.loginAdmin);
+router.post('/', async function (req, res) {
+  // const jane = await Prueba.create({ firstName: 'Jane', lastName: 'Doe' });
+  // console.log("Jane's auto-generated ID:", jane.id);
+  res.status(200).send('auth');
+});
 
 router.get('/', function (req, res) {
   res.status(200).send('auth');

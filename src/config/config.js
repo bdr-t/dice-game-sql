@@ -32,8 +32,8 @@ module.exports = {
   mysql: {
     name: envVars.DB_NAME + (envVars.NODE_ENV === 'test' ? '-test' : ''),
     client: envVars.DB_CLIENT,
-    host: envVars.DB_CLIENT,
-    user: envVars.DB_HOST,
+    host: envVars.DB_HOST,
+    user: envVars.DB_USER,
     password: envVars.DB_PASSWORD,
     port: envVars.DB_PORT,
   },
