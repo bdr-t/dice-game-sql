@@ -1,5 +1,4 @@
 const httpStatus = require('http-status');
-const userService = require('./user.service');
 const ApiError = require('../utils/ApiError');
 
 /**
@@ -10,11 +9,10 @@ const ApiError = require('../utils/ApiError');
  */
 
 const loginUserWithNameAndPasswordAdmin = async (name, password) => {
-  const user = await userService.getUserByName(name);
-  if (!user || !(password === 'password1')) {
+  if (!(name === 'admin') || !(password === 'password1')) {
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Incorrect name or password');
   }
-  return user;
+  return !(name === 'admin') || !(password === 'password1');
 };
 
 module.exports = {
