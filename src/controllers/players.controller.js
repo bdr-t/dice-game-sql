@@ -36,6 +36,7 @@ const createGame = catchAsync(async (req, res) => {
 });
 
 const deleteGames = catchAsync(async (req, res) => {
+  await userService.deleteGames(req.params.id);
   const user = await userService.updateGames(req.params.id);
   res.status(httpStatus.OK).send({ user });
 });

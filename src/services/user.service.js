@@ -77,6 +77,15 @@ const updateGames = async (id, newUser = { lost: 0, won: 0, succes_rate: 0 }) =>
   user.succes_rate = newUser.succes_rate;
 
   await user.save();
+  return Player.findOne({ where: { id } });
+};
+
+const deleteGames = async (id) => {
+  return Games.destroy({
+    where: {
+      userId: id,
+    },
+  });
 };
 
 const getAllUsers = async () => {
@@ -97,4 +106,5 @@ module.exports = {
   getAllUsers,
   getUserByName,
   createGame,
+  deleteGames,
 };
