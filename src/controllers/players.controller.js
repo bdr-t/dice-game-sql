@@ -19,10 +19,11 @@ const createGame = catchAsync(async (req, res) => {
 
   const newUser = {
     succes_rate: game.succes_rate,
-    games: [...user.games, game.game],
     won: game.won,
     lost: game.lost,
   };
+
+  await userService.createGame(user.id, game.game);
 
   await userService.updateGames(req.params.id, newUser);
 
@@ -35,6 +36,7 @@ const createGame = catchAsync(async (req, res) => {
 });
 
 const deleteGames = catchAsync(async (req, res) => {
+  await userService.deleteGames(req.params.id);
   const user = await userService.updateGames(req.params.id);
   res.status(httpStatus.OK).send({ user });
 });
