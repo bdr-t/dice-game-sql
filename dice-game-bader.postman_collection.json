@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "2d5ae06f-1a10-4be7-83b0-79588bf4d053",
+		"name": "dice-game-bader",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create player",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlYjRlNTk3Mi03M2VlLTQ5YjYtOTg2NC01NTc2ZTIyZmM0N2UiLCJpYXQiOjE2MzQyMTkzODgsImV4cCI6MTYzNDIyMjk4OCwidHlwZSI6ImFjY2VzcyJ9.KDE-Ofw90S9yJWo0UG4kuFKyF3vJdM7YCTnULYl6URw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all players",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlYjRlNTk3Mi03M2VlLTQ5YjYtOTg2NC01NTc2ZTIyZmM0N2UiLCJpYXQiOjE2MzQyMTkzODgsImV4cCI6MTYzNDIyMjk4OCwidHlwZSI6ImFjY2VzcyJ9.KDE-Ofw90S9yJWo0UG4kuFKyF3vJdM7YCTnULYl6URw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Play game",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlYjRlNTk3Mi03M2VlLTQ5YjYtOTg2NC01NTc2ZTIyZmM0N2UiLCJpYXQiOjE2MzQyMTkzODgsImV4cCI6MTYzNDIyMjk4OCwidHlwZSI6ImFjY2VzcyJ9.KDE-Ofw90S9yJWo0UG4kuFKyF3vJdM7YCTnULYl6URw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/players/1671217f-1329-48ca-b6be-a9c7746f545f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"players",
+						"1671217f-1329-48ca-b6be-a9c7746f545f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get player",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/player/id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"player",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update players name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/player/id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"player",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete playes games",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/player/id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"player",
+						"id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ranking",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/ranking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ranking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get winner",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/ranking/winner",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ranking",
+						"winner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get loser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/ranking/loser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ranking",
+						"loser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
