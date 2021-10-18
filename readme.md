@@ -1,4 +1,4 @@
-## Node_utils 
+## dice-game-sql
 
 ```bash 
   npm install
