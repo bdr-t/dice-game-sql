@@ -1,8 +1,5 @@
-let id = 0;
-
 const anonimId = () => {
-  id += 1;
-  return id;
+  return Math.floor(Math.random() * 10000) + 1;
 };
 
 module.exports = anonimId;
