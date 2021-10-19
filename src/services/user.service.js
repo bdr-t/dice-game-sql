@@ -74,7 +74,7 @@ const updateGames = async (id, newUser = { lost: 0, won: 0, succes_rate: 0 }) =>
   if (!user) throw new ApiError(httpStatus.BAD_REQUEST, "User doesn't exsist");
   user.lost = newUser.lost;
   user.won = newUser.won;
-  user.succes_rate = newUser.succes_rate;
+  user.succes_rate = `${newUser.succes_rate}`;
 
   await user.save();
   return Player.findOne({ where: { id } });
@@ -90,10 +90,20 @@ const deleteGames = async (id) => {
 
 const getAllUsers = async () => {
   return Player.findAll({
+    raw: true,
     where: {
       name: {
         [Op.ne]: 'admin',
       },
+    },
+  });
+};
+
+const getPlayersGames = async (id) => {
+  return Games.findAll({
+    raw: true,
+    where: {
+      userId: id,
     },
   });
 };
@@ -107,4 +117,5 @@ module.exports = {
   getUserByName,
   createGame,
   deleteGames,
+  getPlayersGames,
 };

@@ -11,7 +11,8 @@ const Game = async (won, lost) => {
 
   const wins = dice1 + dice2 === 7 ? won + 1 : won;
   const loses = dice1 + dice2 !== 7 ? lost + 1 : lost;
-  const succesRate = calculateSucceesRate(won, lost);
+
+  const succesRate = calculateSucceesRate(wins, loses);
 
   return {
     dice1,

@@ -48,7 +48,12 @@ const getAllUsers = catchAsync(async (req, res) => {
 
 const getUser = catchAsync(async (req, res) => {
   const user = await userService.getUserById(req.params.id);
-  res.status(httpStatus.OK).send({ user });
+  const games = await userService.getPlayersGames(req.params.id);
+  const response = {
+    ...user.dataValues,
+    games: [...games],
+  };
+  res.status(httpStatus.OK).send({ users: response });
 });
 
 module.exports = {

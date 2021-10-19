@@ -130,7 +130,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -138,14 +138,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/player/id",
+					"raw": "http://localhost:3000/players/id",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"player",
+						"players",
 						"id"
 					]
 				}
@@ -160,7 +160,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -168,14 +168,14 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/player/id",
+					"raw": "http://localhost:3000/players/id",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"player",
+						"players",
 						"id"
 					]
 				}
@@ -190,7 +190,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -198,14 +198,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/player/id",
+					"raw": "http://localhost:3000/players/id",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"player",
+						"players",
 						"id"
 					]
 				}
@@ -220,7 +220,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -249,7 +249,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"value": "",
 							"type": "string"
 						}
 					]
@@ -279,7 +279,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlMjY2ODI3ZC1hZDQwLTRiYjItYjQxZS04NmRkM2Q0YjJjNTMiLCJpYXQiOjE2MzQyMTkwMDYsImV4cCI6MTYzNDIyMjYwNiwidHlwZSI6ImFjY2VzcyJ9.l7rXJ-u9KMtsEhyLPWiP4KzHO0gVfWjDfgU1gjtVtRM",
+							"value": "",
 							"type": "string"
 						}
 					]
